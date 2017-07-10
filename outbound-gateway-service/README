@@ -1,0 +1,11 @@
+A Demo Spring Integration Application consuming a Spring Boot service
+running on port 5001 using Spring HTTP Integration Outbound Gateway.
+
+Target Spring Boot Service Endpoint
+===================================
+http://localhost:5001/customer
+
+
+The purpose is to enable tracing the service call from Spring Integration application to Spring Boot Service.
+
+
