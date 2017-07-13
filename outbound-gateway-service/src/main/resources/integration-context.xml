@@ -18,6 +18,7 @@
 		http-method="GET"
 		reply-channel="httpReply"
 		expected-response-type="java.lang.String"
+                rest-template="restTemplate"
 	></int-http:outbound-gateway>
 
 	<int:channel id="httpReply"/>
