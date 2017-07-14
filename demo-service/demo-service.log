@@ -1,0 +1,899 @@
+2017-07-14 09:18:21.252  INFO [demo-service,,,] 2063 --- [main] com.demo.main.Application                : No active profile set, falling back to default profiles: default
+2017-07-14 09:18:21.291  INFO [demo-service,,,] 2063 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30276adf: startup date [Fri Jul 14 09:18:21 UTC 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@556adb6e
+2017-07-14 09:18:22.617  INFO [demo-service,,,] 2063 --- [main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2017-07-14 09:18:23.582  INFO [demo-service,,,] 2063 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b908426-426b-3fb7-9db7-24d1d1c5a9ab
+2017-07-14 09:18:23.616  INFO [demo-service,,,] 2063 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2017-07-14 09:18:23.623  INFO [demo-service,,,] 2063 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2017-07-14 09:18:23.939  INFO [demo-service,,,] 2063 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a6cd804e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 09:18:23.989  INFO [demo-service,,,] 2063 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$105d0c8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 09:18:24.191  INFO [demo-service,,,] 2063 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$d580b4fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 09:18:24.619  INFO [demo-service,,,] 2063 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 09:18:24.716  INFO [demo-service,,,] 2063 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 09:18:24.753  INFO [demo-service,,,] 2063 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 09:18:24.985  INFO [demo-service,,,] 2063 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ef3571c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 09:18:25.057  INFO [demo-service,,,] 2063 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration' of type [org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration$$EnhancerBySpringCGLIB$$94e30cd0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 09:18:25.190  INFO [demo-service,,,] 2063 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$baff1aea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 09:18:26.024  INFO [demo-service,,,] 2063 --- [main] org.xnio                                 : XNIO version 3.3.6.Final
+2017-07-14 09:18:26.061  INFO [demo-service,,,] 2063 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2017-07-14 09:18:26.218  WARN [demo-service,,,] 2063 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-07-14 09:18:26.227  WARN [demo-service,,,] 2063 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-07-14 09:18:26.276  INFO [demo-service,,,] 2063 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2017-07-14 09:18:26.281  INFO [demo-service,,,] 2063 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4990 ms
+2017-07-14 09:18:28.683  INFO [demo-service,,,] 2063 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-07-14 09:18:28.685  INFO [demo-service,,,] 2063 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-14 09:18:28.686  INFO [demo-service,,,] 2063 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2017-07-14 09:18:28.686  INFO [demo-service,,,] 2063 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-14 09:18:28.691  INFO [demo-service,,,] 2063 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-14 09:18:28.691  INFO [demo-service,,,] 2063 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-14 09:18:28.691  INFO [demo-service,,,] 2063 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-07-14 09:18:28.691  INFO [demo-service,,,] 2063 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-07-14 09:18:28.692  INFO [demo-service,,,] 2063 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-14 09:18:30.550  INFO [demo-service,,,] 2063 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30276adf: startup date [Fri Jul 14 09:18:21 UTC 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@556adb6e
+2017-07-14 09:18:30.882  INFO [demo-service,,,] 2063 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/customer],methods=[GET]}" onto public java.lang.String com.demo.main.Application.getCustomerByCustomerNo()
+2017-07-14 09:18:30.883  INFO [demo-service,,,] 2063 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Emp],methods=[GET]}" onto public java.lang.String com.demo.main.Application.getEmployeeDetails()
+2017-07-14 09:18:30.891  INFO [demo-service,,,] 2063 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-14 09:18:30.891  INFO [demo-service,,,] 2063 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-14 09:18:31.200  INFO [demo-service,,,] 2063 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-14 09:18:31.207  INFO [demo-service,,,] 2063 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-14 09:18:31.398  INFO [demo-service,,,] 2063 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-14 09:18:32.409  INFO [demo-service,,,] 2063 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2017-07-14 09:18:33.805  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-07-14 09:18:33.813  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.813  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.815  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2017-07-14 09:18:33.815  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2017-07-14 09:18:33.816  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.816  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-14 09:18:33.817  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.819  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2017-07-14 09:18:33.823  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-07-14 09:18:33.824  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.824  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-07-14 09:18:33.825  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-07-14 09:18:33.826  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.828  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-07-14 09:18:33.829  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.834  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.835  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-14 09:18:33.837  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.839  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2017-07-14 09:18:33.840  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-14 09:18:33.841  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.847  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:33.849  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-07-14 09:18:33.850  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2017-07-14 09:18:33.851  INFO [demo-service,,,] 2063 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 09:18:35.104  INFO [demo-service,,,] 2063 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2017-07-14 09:18:35.434  INFO [demo-service,,,] 2063 --- [main] o.s.i.codec.kryo.CompositeKryoRegistrar  : configured Kryo registration [40, java.io.File] with serializer org.springframework.integration.codec.kryo.FileSerializer
+2017-07-14 09:18:35.823  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-14 09:18:35.843  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2017-07-14 09:18:35.845  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-07-14 09:18:35.850  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2017-07-14 09:18:35.851  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2017-07-14 09:18:35.854  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-07-14 09:18:35.856  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-07-14 09:18:35.866  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-07-14 09:18:35.892  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2017-07-14 09:18:35.917  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-07-14 09:18:35.957  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2017-07-14 09:18:36.006  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=30276adf,type=ConfigurationPropertiesRebinder]
+2017-07-14 09:18:36.014  INFO [demo-service,,,] 2063 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2017-07-14 09:18:36.028  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2017-07-14 09:18:36.030  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2017-07-14 09:18:36.044  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2017-07-14 09:18:36.061  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2017-07-14 09:18:36.063  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2017-07-14 09:18:36.135  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel sleuth
+2017-07-14 09:18:36.139  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=sleuth': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=sleuth]
+2017-07-14 09:18:36.175  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2017-07-14 09:18:36.177  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2017-07-14 09:18:36.210  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageSource sleuthStreamSpanReporter.poll.inboundChannelAdapter
+2017-07-14 09:18:36.214  INFO [demo-service,,,] 2063 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageSource,name=sleuthStreamSpanReporter.poll.inboundChannelAdapter,bean=endpoint': registering with JMX server as MBean [org.springframework.integration:type=MessageSource,name=sleuthStreamSpanReporter.poll.inboundChannelAdapter,bean=endpoint]
+2017-07-14 09:18:36.529  INFO [demo-service,,,] 2063 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-07-14 09:18:36.644  INFO [demo-service,,,] 2063 --- [main] com.demo.main.Application                : No active profile set, falling back to default profiles: default
+2017-07-14 09:18:36.649  INFO [demo-service,,,] 2063 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@37c2a4f1: startup date [Fri Jul 14 09:18:36 UTC 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30276adf
+2017-07-14 09:18:36.789  INFO [demo-service,,,] 2063 --- [main] o.s.c.s.b.k.c.KafkaBinderConfiguration   : AdminUtils selected: Kafka 0.10 AdminUtils
+2017-07-14 09:18:36.870  INFO [demo-service,,,] 2063 --- [main] com.demo.main.Application                : Started Application in 0.312 seconds (JVM running for 25.337)
+2017-07-14 09:18:36.934  INFO [demo-service,,,] 2063 --- [main] o.s.c.s.b.k.p.KafkaTopicProvisioner      : Using kafka topic for outbound: sleuth
+2017-07-14 09:18:37.041  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:zookeeper.version=3.4.8--1, built on 02/06/2016 03:18 GMT
+2017-07-14 09:18:37.042  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:host.name=kafkainstance.c.arcane-silo-171509.internal
+2017-07-14 09:18:37.042  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.version=1.8.0_131
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.vendor=Oracle Corporation
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.home=/usr/lib/jvm/java-8-oracle/jre
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.io.tmpdir=/tmp
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.compiler=<NA>
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:os.name=Linux
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:os.arch=amd64
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:os.version=3.16.0-4-amd64
+2017-07-14 09:18:37.043  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:user.name=root
+2017-07-14 09:18:37.044  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:user.home=/root
+2017-07-14 09:18:37.044  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:user.dir=/home/volivattamjaadu/tracing-demo-repo/demo-service
+2017-07-14 09:18:37.045  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.I0Itec.zkclient.ZkClient@9fac795
+2017-07-14 09:18:37.079  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:18:37.092  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2017-07-14 09:18:37.104  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x15d405f27240005, negotiated timeout = 10000
+2017-07-14 09:18:37.870  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Session: 0x15d405f27240005 closed
+2017-07-14 09:18:37.871  INFO [demo-service,,,] 2063 --- [main-EventThread] org.apache.zookeeper.ClientCnxn          : EventThread shut down for session: 0x15d405f27240005
+2017-07-14 09:18:37.875  INFO [demo-service,,,] 2063 --- [main] org.apache.zookeeper.ZooKeeper           : Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.I0Itec.zkclient.ZkClient@4ce7cb7a
+2017-07-14 09:18:37.881  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:18:37.886  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Socket connection established to localhost/127.0.0.1:2181, initiating session
+2017-07-14 09:18:37.889  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15d405f27240006, negotiated timeout = 10000
+2017-07-14 09:18:37.965  INFO [demo-service,,,] 2063 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2017-07-14 09:18:37.986  INFO [demo-service,,,] 2063 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2017-07-14 09:18:38.058  WARN [demo-service,,,] 2063 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'key.deserializer' was supplied but isn't a known config.
+2017-07-14 09:18:38.058  WARN [demo-service,,,] 2063 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'value.deserializer' was supplied but isn't a known config.
+2017-07-14 09:18:38.059  INFO [demo-service,,,] 2063 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-07-14 09:18:38.061  INFO [demo-service,,,] 2063 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-07-14 09:18:38.187  INFO [demo-service,,,] 2063 --- [main] o.s.integration.channel.DirectChannel    : Channel 'demo-service:5002.sleuth' has 1 subscriber(s).
+2017-07-14 09:18:38.189  INFO [demo-service,,,] 2063 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-07-14 09:18:38.274  INFO [demo-service,,,] 2063 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2017-07-14 09:18:38.275  INFO [demo-service,,,] 2063 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'demo-service:5002.errorChannel' has 1 subscriber(s).
+2017-07-14 09:18:38.275  INFO [demo-service,,,] 2063 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2017-07-14 09:18:38.305  INFO [demo-service,,,] 2063 --- [main] o.s.i.e.SourcePollingChannelAdapter      : started sleuthStreamSpanReporter.poll.inboundChannelAdapter
+2017-07-14 09:18:38.306  INFO [demo-service,,,] 2063 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2017-07-14 09:18:38.306  INFO [demo-service,,,] 2063 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-14 09:18:38.421  INFO [demo-service,,,] 2063 --- [main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 5002 (http)
+2017-07-14 09:18:38.432  INFO [demo-service,,,] 2063 --- [main] com.demo.main.Application                : Started Application in 19.924 seconds (JVM running for 26.898)
+2017-07-14 09:22:01.886 DEBUG [demo-service,,,] 2063 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Initializing filter 'traceFilter'
+2017-07-14 09:22:01.886 DEBUG [demo-service,,,] 2063 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Filter 'traceFilter' configured successfully
+2017-07-14 09:22:01.887 DEBUG [demo-service,,,] 2063 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/emp] that should not be sampled [false]
+2017-07-14 09:22:01.896 DEBUG [demo-service,3276675c006f4e7c,3276675c006f4e7c,true] 2063 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 09:22:01.978  INFO [demo-service,3276675c006f4e7c,3276675c006f4e7c,true] 2063 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-14 09:22:01.983  INFO [demo-service,3276675c006f4e7c,3276675c006f4e7c,true] 2063 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-14 09:22:02.153  INFO [demo-service,3276675c006f4e7c,3276675c006f4e7c,true] 2063 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 170 ms
+2017-07-14 09:22:02.200 DEBUG [demo-service,3276675c006f4e7c,8b8e3d09b2689a01,true] 2063 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : The request with uri [/emp] hasn't been handled by any of Sleuth's components. That means that most likely you're using custom HandlerMappings and didn't add Sleuth's TraceHandlerInterceptor. Sleuth will create a span to ensure that the graph of calls remains valid in Zipkin
+2017-07-14 09:22:02.201 DEBUG [demo-service,3276675c006f4e7c,3276675c006f4e7c,true] 2063 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Detaching the span [Trace: 3276675c006f4e7c, Span: 3276675c006f4e7c, Parent: null, exportable:true] since the response was unsuccessful
+2017-07-14 09:22:02.213 DEBUG [demo-service,3276675c006f4e7c,8b8e3d09b2689a01,true] 2063 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : There has already been a span in the request [Trace: 3276675c006f4e7c, Span: 8b8e3d09b2689a01, Parent: 3276675c006f4e7c, exportable:true]
+2017-07-14 09:22:02.213 DEBUG [demo-service,3276675c006f4e7c,8b8e3d09b2689a01,true] 2063 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/error] that should not be sampled [false]
+2017-07-14 09:22:02.213 DEBUG [demo-service,3276675c006f4e7c,8b8e3d09b2689a01,true] 2063 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : The span [Trace: 3276675c006f4e7c, Span: 8b8e3d09b2689a01, Parent: 3276675c006f4e7c, exportable:true] was already detached once and we're processing an error
+2017-07-14 09:22:02.228 DEBUG [demo-service,3276675c006f4e7c,8b8e3d09b2689a01,true] 2063 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 3276675c006f4e7c, Span: 8b8e3d09b2689a01, Parent: 3276675c006f4e7c, exportable:true]
+2017-07-14 09:22:02.233 DEBUG [demo-service,3276675c006f4e7c,8b8e3d09b2689a01,true] 2063 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [errorHtml] to a span [Trace: 3276675c006f4e7c, Span: 8b8e3d09b2689a01, Parent: 3276675c006f4e7c, exportable:true]
+2017-07-14 09:22:02.233 DEBUG [demo-service,3276675c006f4e7c,8b8e3d09b2689a01,true] 2063 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [BasicErrorController] to a span [Trace: 3276675c006f4e7c, Span: 8b8e3d09b2689a01, Parent: 3276675c006f4e7c, exportable:true]
+2017-07-14 09:22:02.325 DEBUG [demo-service,3276675c006f4e7c,8b8e3d09b2689a01,true] 2063 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Skipping closing of a span for error controller processing
+2017-07-14 09:22:02.360 DEBUG [demo-service,,,] 2063 --- [task-scheduler-3] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [2] spans
+2017-07-14 09:22:02.361 DEBUG [demo-service,,,] 2063 --- [task-scheduler-3] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [demo-service]
+2017-07-14 09:22:02.392  INFO [demo-service,1f14df890ca4c011,1f14df890ca4c011,false] 2063 --- [task-scheduler-3] o.s.i.codec.kryo.CompositeKryoRegistrar  : registering [40, java.io.File] with serializer org.springframework.integration.codec.kryo.FileSerializer
+2017-07-14 09:22:02.635 DEBUG [demo-service,1f14df890ca4c011,1f14df890ca4c011,false] 2063 --- [task-scheduler-3] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 1f14df890ca4c011, Span: 1f14df890ca4c011, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 09:22:02.870 DEBUG [demo-service,,,] 2063 --- [XNIO-2 task-2] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/favicon.ico] that should not be sampled [true]
+2017-07-14 09:22:02.873 DEBUG [demo-service,e7c1c4109c475b56,e7c1c4109c475b56,false] 2063 --- [XNIO-2 task-2] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 09:22:02.930 DEBUG [demo-service,e7c1c4109c475b56,1f6d11080cafa526,false] 2063 --- [XNIO-2 task-2] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: e7c1c4109c475b56, Span: 1f6d11080cafa526, Parent: e7c1c4109c475b56, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 09:22:02.932 DEBUG [demo-service,e7c1c4109c475b56,e7c1c4109c475b56,false] 2063 --- [XNIO-2 task-2] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: e7c1c4109c475b56, Span: e7c1c4109c475b56, Parent: null, exportable:false] since the response was successful
+2017-07-14 09:22:02.932 DEBUG [demo-service,e7c1c4109c475b56,e7c1c4109c475b56,false] 2063 --- [XNIO-2 task-2] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: e7c1c4109c475b56, Span: e7c1c4109c475b56, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 09:22:19.198 DEBUG [demo-service,,,] 2063 --- [XNIO-2 task-3] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/Emp] that should not be sampled [false]
+2017-07-14 09:22:19.199 DEBUG [demo-service,eea5094d8d672fea,eea5094d8d672fea,true] 2063 --- [XNIO-2 task-3] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 09:22:19.211 DEBUG [demo-service,eea5094d8d672fea,eea5094d8d672fea,true] 2063 --- [XNIO-2 task-3] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: eea5094d8d672fea, Span: eea5094d8d672fea, Parent: null, exportable:true]
+2017-07-14 09:22:19.215 DEBUG [demo-service,eea5094d8d672fea,eea5094d8d672fea,true] 2063 --- [XNIO-2 task-3] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getEmployeeDetails] to a span [Trace: eea5094d8d672fea, Span: eea5094d8d672fea, Parent: null, exportable:true]
+2017-07-14 09:22:19.215 DEBUG [demo-service,eea5094d8d672fea,eea5094d8d672fea,true] 2063 --- [XNIO-2 task-3] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [Application] to a span [Trace: eea5094d8d672fea, Span: eea5094d8d672fea, Parent: null, exportable:true]
+2017-07-14 09:22:19.216  INFO [demo-service,eea5094d8d672fea,eea5094d8d672fea,true] 2063 --- [XNIO-2 task-3] com.demo.main.Application                : Inside demo-service
+2017-07-14 09:22:19.361 DEBUG [demo-service,eea5094d8d672fea,75c3c408f4c04dd5,true] 2063 --- [XNIO-2 task-3] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: eea5094d8d672fea, Span: 75c3c408f4c04dd5, Parent: eea5094d8d672fea, exportable:true]]
+2017-07-14 09:22:20.123  INFO [demo-service,eea5094d8d672fea,eea5094d8d672fea,true] 2063 --- [XNIO-2 task-3] com.demo.main.Application                : employee service returned: Welcome Employee
+2017-07-14 09:22:20.137 DEBUG [demo-service,eea5094d8d672fea,eea5094d8d672fea,true] 2063 --- [XNIO-2 task-3] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: eea5094d8d672fea, Span: eea5094d8d672fea, Parent: null, exportable:true] since the response was successful
+2017-07-14 09:22:20.640 DEBUG [demo-service,,,] 2063 --- [task-scheduler-9] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [2] spans
+2017-07-14 09:22:20.640 DEBUG [demo-service,,,] 2063 --- [task-scheduler-9] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [demo-service]
+2017-07-14 09:22:20.658 DEBUG [demo-service,9601a2a2871d7882,9601a2a2871d7882,false] 2063 --- [task-scheduler-9] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 9601a2a2871d7882, Span: 9601a2a2871d7882, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 09:32:18.487  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Unable to read additional data from server sessionid 0x15d405f27240006, likely server has closed socket, closing socket connection and attempting reconnect
+2017-07-14 09:32:19.048  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:19.053  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:21.008  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:21.009  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:21.356  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:21.357  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:22.782  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:22.782  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:23.198  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:23.199  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:25.220  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:25.221  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:26.291  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:26.291  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:28.169  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:28.170  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:28.961  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:28.962  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:30.486  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:30.486  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:31.169  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:31.170  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:33.020  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:33.021  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:33.297  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:33.299  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:35.126  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:35.126  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:35.623  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:35.623  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:36.752  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:36.753  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:37.568  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:37.568  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:39.522  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:39.522  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:39.969  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:39.970  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:41.108  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:41.109  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:41.467  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:41.468  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:43.005  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:43.006  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:43.668  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:43.669  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:44.775  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:44.775  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:45.739  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:45.739  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:47.688  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:47.689  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:48.352  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:48.353  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:50.069  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:50.069  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:50.917  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:50.917  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:52.582  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:52.582  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:52.718  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:52.719  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:54.230  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:54.231  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:54.809  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:54.810  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:56.195  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:56.195  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:57.154  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:57.154  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:58.667  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:58.668  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:32:59.684  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:32:59.685  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:01.717  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:01.718  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:02.100  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:02.101  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:03.906  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:03.906  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:04.848  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:04.849  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:06.075  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:06.076  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:06.826  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:06.827  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:08.338  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:08.339  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:09.308  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:09.309  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:10.912  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:10.912  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:11.190  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:11.190  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:12.801  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:12.802  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:13.466  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:13.466  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:14.845  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:14.845  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:15.465  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:15.466  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:17.258  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:17.259  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:18.186  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:18.187  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:19.719  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:19.719  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:19.995  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:19.995  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:21.615  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:21.615  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:22.059  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:22.060  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:23.893  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:23.894  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:24.707  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:24.708  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:26.386  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:26.386  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:27.122  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:27.122  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:28.732  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:28.733  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:29.534  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:29.535  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:31.217  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:31.218  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:31.788  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:31.788  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:32.983  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:32.983  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:33.406  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:33.407  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:34.872  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:34.873  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
+2017-07-14 09:33:35.297  INFO [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 09:33:35.298  WARN [demo-service,,,] 2063 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session 0x15d405f27240006 for server null, unexpected error, closing socket connection and attempting reconnect
+
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_131]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361) ~[zookeeper-3.4.8.jar:3.4.8--1]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141) ~[zookeeper-3.4.8.jar:3.4.8--1]
+
