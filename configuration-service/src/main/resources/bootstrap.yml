@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: configuration-service
+  cloud:
+    config:
+      server:
+        #native:
+          #search-locations: file:///F:/sridhar/hello-repo
+        git:
+          uri: https://bitbucket.org/volivattamjaadu/config-repo
+          username: volivattamjaadu
+          password: Kajol143$
+
+  #profiles:
+    #active: native
