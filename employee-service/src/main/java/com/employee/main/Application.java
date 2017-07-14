@@ -1,4 +1,4 @@
-package com.demo.main;
+package com.employee.main;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,7 +9,6 @@ import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @RestController
@@ -20,24 +19,12 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@GetMapping("/customer")
-	public String getCustomerByCustomerNo() {
-		logger.info("Inside demo-service");
-		return "Welcome";
+	@GetMapping("/employee")
+	public String getEmployee() {
+		logger.info("Inside employee-service");
+		return "Welcome Employee";
 	}
 
-	@GetMapping("/Emp")
-	public String getEmployeeDetails() {
-		logger.info("Inside demo-service");
-		String employeeDetails=restTemplate.getForObject("http://localhost:5003/employee", String.class);
-		logger.info("employee service returned: " + employeeDetails);
-		return employeeDetails;
-	}
-	
-    @Bean
-    RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
 	@Bean
 	public Sampler defaultSampler() {
 		return new AlwaysSampler();
