@@ -1,0 +1,540 @@
+2017-07-14 08:06:15.865  INFO [outbound-gateway,,,] 4144 --- [main] c.d.i.OutboundGatewayApplication         : No active profile set, falling back to default profiles: default
+2017-07-14 08:06:15.925  INFO [outbound-gateway,,,] 4144 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@da8647a: startup date [Fri Jul 14 08:06:15 UTC 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2e464d5e
+2017-07-14 08:06:17.357  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [integration-context.xml]
+2017-07-14 08:06:18.498  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2017-07-14 08:06:20.286  INFO [outbound-gateway,,,] 4144 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=22ddc364-0777-373b-bc21-b473bbb270d0
+2017-07-14 08:06:20.325  INFO [outbound-gateway,,,] 4144 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2017-07-14 08:06:20.327  INFO [outbound-gateway,,,] 4144 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2017-07-14 08:06:20.739  INFO [outbound-gateway,,,] 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$da4a373e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 08:06:20.811  INFO [outbound-gateway,,,] 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$43d9c37e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 08:06:21.065  INFO [outbound-gateway,,,] 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$8fd6bed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 08:06:21.676  INFO [outbound-gateway,,,] 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 08:06:21.796  INFO [outbound-gateway,,,] 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 08:06:21.857  INFO [outbound-gateway,,,] 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 08:06:22.176  INFO [outbound-gateway,,,] 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$22b228b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 08:06:22.274  INFO [outbound-gateway,,,] 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration' of type [org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration$$EnhancerBySpringCGLIB$$c85fc3c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 08:06:22.439  INFO [outbound-gateway,,,] 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$ee7bd1da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-14 08:06:24.071  INFO [outbound-gateway,,,] 4144 --- [main] org.xnio                                 : XNIO version 3.3.6.Final
+2017-07-14 08:06:24.119  INFO [outbound-gateway,,,] 4144 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2017-07-14 08:06:24.317  WARN [outbound-gateway,,,] 4144 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-07-14 08:06:24.317  WARN [outbound-gateway,,,] 4144 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-07-14 08:06:24.370  INFO [outbound-gateway,,,] 4144 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2017-07-14 08:06:24.371  INFO [outbound-gateway,,,] 4144 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8452 ms
+2017-07-14 08:06:25.127  INFO [outbound-gateway,,,] 4144 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2017-07-14 08:06:26.859  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-07-14 08:06:26.866  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-14 08:06:26.866  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2017-07-14 08:06:26.866  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-14 08:06:26.867  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-14 08:06:26.867  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-14 08:06:26.867  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-07-14 08:06:26.867  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-07-14 08:06:26.868  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-14 08:06:29.626  INFO [outbound-gateway,,,] 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@da8647a: startup date [Fri Jul 14 08:06:15 UTC 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2e464d5e
+2017-07-14 08:06:29.965  INFO [outbound-gateway,,,] 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/composite],methods=[GET]}" onto public java.lang.String com.demo.integration.OutboundGatewayApplication.getValues()
+2017-07-14 08:06:29.969  INFO [outbound-gateway,,,] 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-14 08:06:29.971  INFO [outbound-gateway,,,] 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-14 08:06:30.277  INFO [outbound-gateway,,,] 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-14 08:06:30.281  INFO [outbound-gateway,,,] 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-14 08:06:30.497  INFO [outbound-gateway,,,] 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-14 08:06:32.707  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.711  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-07-14 08:06:32.713  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-07-14 08:06:32.714  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2017-07-14 08:06:32.714  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.716  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2017-07-14 08:06:32.721  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2017-07-14 08:06:32.722  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-14 08:06:32.726  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.727  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-07-14 08:06:32.727  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.728  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.728  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.734  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.735  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2017-07-14 08:06:32.736  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-14 08:06:32.738  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.739  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2017-07-14 08:06:32.740  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-07-14 08:06:32.742  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-14 08:06:32.752  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-07-14 08:06:32.752  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.753  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.754  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.756  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-14 08:06:32.757  INFO [outbound-gateway,,,] 4144 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-07-14 08:06:34.018  INFO [outbound-gateway,,,] 4144 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2017-07-14 08:06:34.503  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.codec.kryo.CompositeKryoRegistrar  : configured Kryo registration [40, java.io.File] with serializer org.springframework.integration.codec.kryo.FileSerializer
+2017-07-14 08:06:34.936  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-14 08:06:34.959  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2017-07-14 08:06:34.960  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-07-14 08:06:34.963  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2017-07-14 08:06:34.964  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2017-07-14 08:06:34.966  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-07-14 08:06:34.968  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-07-14 08:06:34.975  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-07-14 08:06:35.006  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2017-07-14 08:06:35.033  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-07-14 08:06:35.058  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2017-07-14 08:06:35.106  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=da8647a,type=ConfigurationPropertiesRebinder]
+2017-07-14 08:06:35.109  INFO [outbound-gateway,,,] 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2017-07-14 08:06:35.129  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2017-07-14 08:06:35.131  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2017-07-14 08:06:35.137  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2017-07-14 08:06:35.156  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel sleuth
+2017-07-14 08:06:35.161  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=sleuth': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=sleuth]
+2017-07-14 08:06:35.213  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel httpReply
+2017-07-14 08:06:35.215  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=httpReply': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=httpReply]
+2017-07-14 08:06:35.239  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel httpOutbound
+2017-07-14 08:06:35.241  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=httpOutbound': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=httpOutbound]
+2017-07-14 08:06:35.269  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2017-07-14 08:06:35.271  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2017-07-14 08:06:35.316  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler httpOutbound
+2017-07-14 08:06:35.326  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=httpOutbound,bean=anonymous': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=httpOutbound,bean=anonymous]
+2017-07-14 08:06:35.353  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler httpReply
+2017-07-14 08:06:35.354  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=httpReply,bean=anonymous': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=httpReply,bean=anonymous]
+2017-07-14 08:06:35.368  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2017-07-14 08:06:35.374  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2017-07-14 08:06:35.387  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageSource sleuthStreamSpanReporter.poll.inboundChannelAdapter
+2017-07-14 08:06:35.394  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageSource,name=sleuthStreamSpanReporter.poll.inboundChannelAdapter,bean=endpoint': registering with JMX server as MBean [org.springframework.integration:type=MessageSource,name=sleuthStreamSpanReporter.poll.inboundChannelAdapter,bean=endpoint]
+2017-07-14 08:06:35.409  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=ManagedEndpoint,name=simpleGateway,bean=endpoint': registering with JMX server as MBean [org.springframework.integration:type=ManagedEndpoint,name=simpleGateway,bean=endpoint]
+2017-07-14 08:06:35.411  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registered endpoint without MessageSource: org.springframework.integration:type=ManagedEndpoint,name=simpleGateway,bean=endpoint
+2017-07-14 08:06:35.723  INFO [outbound-gateway,,,] 4144 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-07-14 08:06:35.844  INFO [outbound-gateway,,,] 4144 --- [main] c.d.i.OutboundGatewayApplication         : No active profile set, falling back to default profiles: default
+2017-07-14 08:06:35.867  INFO [outbound-gateway,,,] 4144 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@353dff25: startup date [Fri Jul 14 08:06:35 UTC 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@da8647a
+2017-07-14 08:06:35.988  INFO [outbound-gateway,,,] 4144 --- [main] o.s.c.s.b.k.c.KafkaBinderConfiguration   : AdminUtils selected: Kafka 0.10 AdminUtils
+2017-07-14 08:06:36.076  INFO [outbound-gateway,,,] 4144 --- [main] c.d.i.OutboundGatewayApplication         : Started OutboundGatewayApplication in 0.324 seconds (JVM running for 32.812)
+2017-07-14 08:06:36.164  INFO [outbound-gateway,,,] 4144 --- [main] o.s.c.s.b.k.p.KafkaTopicProvisioner      : Using kafka topic for outbound: sleuth
+2017-07-14 08:06:36.241  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:zookeeper.version=3.4.8--1, built on 02/06/2016 03:18 GMT
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:host.name=kafkainstance.c.arcane-silo-171509.internal
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.version=1.8.0_131
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.vendor=Oracle Corporation
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.home=/usr/lib/jvm/java-8-oracle/jre
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.io.tmpdir=/tmp
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:java.compiler=<NA>
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:os.name=Linux
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:os.arch=amd64
+2017-07-14 08:06:36.245  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:os.version=3.16.0-4-amd64
+2017-07-14 08:06:36.246  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:user.name=root
+2017-07-14 08:06:36.249  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:user.home=/root
+2017-07-14 08:06:36.251  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Client environment:user.dir=/home/volivattamjaadu/tracing-demo-repo/outbound-gateway-service
+2017-07-14 08:06:36.252  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.I0Itec.zkclient.ZkClient@672d0d43
+2017-07-14 08:06:36.286  INFO [outbound-gateway,,,] 4144 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 08:06:36.298  INFO [outbound-gateway,,,] 4144 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Socket connection established to localhost/127.0.0.1:2181, initiating session
+2017-07-14 08:06:36.307  INFO [outbound-gateway,,,] 4144 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15d40096fba000b, negotiated timeout = 10000
+2017-07-14 08:06:36.979  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Session: 0x15d40096fba000b closed
+2017-07-14 08:06:36.980  INFO [outbound-gateway,,,] 4144 --- [main-EventThread] org.apache.zookeeper.ClientCnxn          : EventThread shut down for session: 0x15d40096fba000b
+2017-07-14 08:06:36.989  INFO [outbound-gateway,,,] 4144 --- [main] org.apache.zookeeper.ZooKeeper           : Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.I0Itec.zkclient.ZkClient@56457b63
+2017-07-14 08:06:36.992  INFO [outbound-gateway,,,] 4144 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-07-14 08:06:36.992  INFO [outbound-gateway,,,] 4144 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Socket connection established to localhost/127.0.0.1:2181, initiating session
+2017-07-14 08:06:36.995  INFO [outbound-gateway,,,] 4144 --- [main-SendThread(localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15d40096fba000c, negotiated timeout = 10000
+2017-07-14 08:06:37.090  INFO [outbound-gateway,,,] 4144 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2017-07-14 08:06:37.103  INFO [outbound-gateway,,,] 4144 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2017-07-14 08:06:37.173  WARN [outbound-gateway,,,] 4144 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'key.deserializer' was supplied but isn't a known config.
+2017-07-14 08:06:37.173  WARN [outbound-gateway,,,] 4144 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'value.deserializer' was supplied but isn't a known config.
+2017-07-14 08:06:37.174  INFO [outbound-gateway,,,] 4144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-07-14 08:06:37.174  INFO [outbound-gateway,,,] 4144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-07-14 08:06:37.276  INFO [outbound-gateway,,,] 4144 --- [main] o.s.integration.channel.DirectChannel    : Channel 'outbound-gateway:9081.sleuth' has 1 subscriber(s).
+2017-07-14 08:06:37.278  INFO [outbound-gateway,,,] 4144 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-07-14 08:06:37.279  INFO [outbound-gateway,,,] 4144 --- [main] ProxyFactoryBean$MethodInvocationGateway : started simpleGateway
+2017-07-14 08:06:37.281  INFO [outbound-gateway,,,] 4144 --- [main] GatewayCompletableFutureProxyFactoryBean : started simpleGateway
+2017-07-14 08:06:37.284  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {http:outbound-gateway} as a subscriber to the 'httpOutbound' channel
+2017-07-14 08:06:37.284  INFO [outbound-gateway,,,] 4144 --- [main] o.s.integration.channel.DirectChannel    : Channel 'outbound-gateway:9081.httpOutbound' has 1 subscriber(s).
+2017-07-14 08:06:37.284  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started org.springframework.integration.config.ConsumerEndpointFactoryBean#0
+2017-07-14 08:06:37.284  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {service-activator} as a subscriber to the 'httpReply' channel
+2017-07-14 08:06:37.284  INFO [outbound-gateway,,,] 4144 --- [main] o.s.integration.channel.DirectChannel    : Channel 'outbound-gateway:9081.httpReply' has 1 subscriber(s).
+2017-07-14 08:06:37.284  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started org.springframework.integration.config.ConsumerEndpointFactoryBean#1
+2017-07-14 08:06:37.368  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2017-07-14 08:06:37.368  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'outbound-gateway:9081.errorChannel' has 1 subscriber(s).
+2017-07-14 08:06:37.368  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2017-07-14 08:06:37.401  INFO [outbound-gateway,,,] 4144 --- [main] o.s.i.e.SourcePollingChannelAdapter      : started sleuthStreamSpanReporter.poll.inboundChannelAdapter
+2017-07-14 08:06:37.401  INFO [outbound-gateway,,,] 4144 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2017-07-14 08:06:37.402  INFO [outbound-gateway,,,] 4144 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-14 08:06:37.522  INFO [outbound-gateway,,,] 4144 --- [main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 9081 (http)
+2017-07-14 08:06:37.534  INFO [outbound-gateway,,,] 4144 --- [main] c.d.i.OutboundGatewayApplication         : Started OutboundGatewayApplication in 24.98 seconds (JVM running for 34.27)
+2017-07-14 08:10:31.459 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Initializing filter 'traceFilter'
+2017-07-14 08:10:31.460 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Filter 'traceFilter' configured successfully
+2017-07-14 08:10:31.464 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:10:31.473 DEBUG [outbound-gateway,0d6791eca5966a4f,0d6791eca5966a4f,true] 4144 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:10:31.484  INFO [outbound-gateway,0d6791eca5966a4f,0d6791eca5966a4f,true] 4144 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-14 08:10:31.485  INFO [outbound-gateway,0d6791eca5966a4f,0d6791eca5966a4f,true] 4144 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-14 08:10:31.807  INFO [outbound-gateway,0d6791eca5966a4f,0d6791eca5966a4f,true] 4144 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 322 ms
+2017-07-14 08:10:31.891 DEBUG [outbound-gateway,0d6791eca5966a4f,0d6791eca5966a4f,true] 4144 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 0d6791eca5966a4f, Span: 0d6791eca5966a4f, Parent: null, exportable:true]
+2017-07-14 08:10:31.901 DEBUG [outbound-gateway,0d6791eca5966a4f,0d6791eca5966a4f,true] 4144 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 0d6791eca5966a4f, Span: 0d6791eca5966a4f, Parent: null, exportable:true]
+2017-07-14 08:10:31.902 DEBUG [outbound-gateway,0d6791eca5966a4f,0d6791eca5966a4f,true] 4144 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 0d6791eca5966a4f, Span: 0d6791eca5966a4f, Parent: null, exportable:true]
+2017-07-14 08:10:31.956  INFO [outbound-gateway,0d6791eca5966a4f,0d6791eca5966a4f,true] 4144 --- [XNIO-2 task-1] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:10:32.227 DEBUG [outbound-gateway,0d6791eca5966a4f,37a5ec134a83dc6c,true] 4144 --- [XNIO-2 task-1] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 0d6791eca5966a4f, Span: 37a5ec134a83dc6c, Parent: fadec79730db004b, exportable:true]]
+2017-07-14 08:10:33.158  INFO [outbound-gateway,0d6791eca5966a4f,fadec79730db004b,true] 4144 --- [XNIO-2 task-1] o.s.integration.support.MessageBuilder   : The header [id=e5eb225a-a7d0-c000-6cba-498ab6a59069] is ignored for population because it is is readOnly.
+2017-07-14 08:10:33.225  INFO [outbound-gateway,0d6791eca5966a4f,8459346276610898,true] 4144 --- [XNIO-2 task-1] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:10:33.227  INFO [outbound-gateway,0d6791eca5966a4f,8459346276610898,true] 4144 --- [XNIO-2 task-1] o.s.integration.support.MessageBuilder   : The header [id=58107ab7-6560-ec0f-8e04-c13c829c2dde] is ignored for population because it is is readOnly.
+2017-07-14 08:10:33.354 DEBUG [outbound-gateway,0d6791eca5966a4f,0d6791eca5966a4f,true] 4144 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 0d6791eca5966a4f, Span: 0d6791eca5966a4f, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:10:33.456 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-3] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:10:33.457 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-3] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:10:33.474  INFO [outbound-gateway,e51fa356a5a50f0c,e51fa356a5a50f0c,false] 4144 --- [task-scheduler-3] o.s.i.codec.kryo.CompositeKryoRegistrar  : registering [40, java.io.File] with serializer org.springframework.integration.codec.kryo.FileSerializer
+2017-07-14 08:10:33.768 DEBUG [outbound-gateway,e51fa356a5a50f0c,e51fa356a5a50f0c,false] 4144 --- [task-scheduler-3] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: e51fa356a5a50f0c, Span: e51fa356a5a50f0c, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:11:05.378 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-2] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:11:05.385 DEBUG [outbound-gateway,af443b2a8471f828,af443b2a8471f828,true] 4144 --- [XNIO-2 task-2] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:11:05.397 DEBUG [outbound-gateway,af443b2a8471f828,af443b2a8471f828,true] 4144 --- [XNIO-2 task-2] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: af443b2a8471f828, Span: af443b2a8471f828, Parent: null, exportable:true]
+2017-07-14 08:11:05.401 DEBUG [outbound-gateway,af443b2a8471f828,af443b2a8471f828,true] 4144 --- [XNIO-2 task-2] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: af443b2a8471f828, Span: af443b2a8471f828, Parent: null, exportable:true]
+2017-07-14 08:11:05.401 DEBUG [outbound-gateway,af443b2a8471f828,af443b2a8471f828,true] 4144 --- [XNIO-2 task-2] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: af443b2a8471f828, Span: af443b2a8471f828, Parent: null, exportable:true]
+2017-07-14 08:11:05.402  INFO [outbound-gateway,af443b2a8471f828,af443b2a8471f828,true] 4144 --- [XNIO-2 task-2] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:11:05.409 DEBUG [outbound-gateway,af443b2a8471f828,5bdd4f0093d5c861,true] 4144 --- [XNIO-2 task-2] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: af443b2a8471f828, Span: 5bdd4f0093d5c861, Parent: c5a76564d7d3619d, exportable:true]]
+2017-07-14 08:11:05.446  INFO [outbound-gateway,af443b2a8471f828,c5a76564d7d3619d,true] 4144 --- [XNIO-2 task-2] o.s.integration.support.MessageBuilder   : The header [id=4e74da3b-d631-168f-00a6-9e6f22c70500] is ignored for population because it is is readOnly.
+2017-07-14 08:11:05.478  INFO [outbound-gateway,af443b2a8471f828,78a77a34f8f38119,true] 4144 --- [XNIO-2 task-2] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:11:05.478  INFO [outbound-gateway,af443b2a8471f828,78a77a34f8f38119,true] 4144 --- [XNIO-2 task-2] o.s.integration.support.MessageBuilder   : The header [id=d6e06d82-3245-9273-fedb-2a20e8d3f82d] is ignored for population because it is is readOnly.
+2017-07-14 08:11:05.505 DEBUG [outbound-gateway,af443b2a8471f828,af443b2a8471f828,true] 4144 --- [XNIO-2 task-2] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: af443b2a8471f828, Span: af443b2a8471f828, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:11:05.779 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-7] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:11:05.779 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-7] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:11:05.796 DEBUG [outbound-gateway,60cf1c4fead6a6d9,60cf1c4fead6a6d9,false] 4144 --- [task-scheduler-7] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 60cf1c4fead6a6d9, Span: 60cf1c4fead6a6d9, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:11:07.322 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-3] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:11:07.326 DEBUG [outbound-gateway,088c557e11f38e67,088c557e11f38e67,true] 4144 --- [XNIO-2 task-3] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:11:07.342 DEBUG [outbound-gateway,088c557e11f38e67,088c557e11f38e67,true] 4144 --- [XNIO-2 task-3] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 088c557e11f38e67, Span: 088c557e11f38e67, Parent: null, exportable:true]
+2017-07-14 08:11:07.345 DEBUG [outbound-gateway,088c557e11f38e67,088c557e11f38e67,true] 4144 --- [XNIO-2 task-3] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 088c557e11f38e67, Span: 088c557e11f38e67, Parent: null, exportable:true]
+2017-07-14 08:11:07.348 DEBUG [outbound-gateway,088c557e11f38e67,088c557e11f38e67,true] 4144 --- [XNIO-2 task-3] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 088c557e11f38e67, Span: 088c557e11f38e67, Parent: null, exportable:true]
+2017-07-14 08:11:07.348  INFO [outbound-gateway,088c557e11f38e67,088c557e11f38e67,true] 4144 --- [XNIO-2 task-3] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:11:07.353 DEBUG [outbound-gateway,088c557e11f38e67,94c24b671c1ac700,true] 4144 --- [XNIO-2 task-3] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 088c557e11f38e67, Span: 94c24b671c1ac700, Parent: 6f15b976097e9c62, exportable:true]]
+2017-07-14 08:11:07.404  INFO [outbound-gateway,088c557e11f38e67,6f15b976097e9c62,true] 4144 --- [XNIO-2 task-3] o.s.integration.support.MessageBuilder   : The header [id=6a60526a-f674-7421-9d2c-a0455556174c] is ignored for population because it is is readOnly.
+2017-07-14 08:11:07.410  INFO [outbound-gateway,088c557e11f38e67,079ccc960b5a2046,true] 4144 --- [XNIO-2 task-3] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:11:07.411  INFO [outbound-gateway,088c557e11f38e67,079ccc960b5a2046,true] 4144 --- [XNIO-2 task-3] o.s.integration.support.MessageBuilder   : The header [id=629d4978-4ea0-4b57-7650-79af6f7362e5] is ignored for population because it is is readOnly.
+2017-07-14 08:11:07.444 DEBUG [outbound-gateway,088c557e11f38e67,088c557e11f38e67,true] 4144 --- [XNIO-2 task-3] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 088c557e11f38e67, Span: 088c557e11f38e67, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:11:07.797 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-5] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:11:07.798 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-5] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:11:07.806 DEBUG [outbound-gateway,7c8d5c83bd1893d6,7c8d5c83bd1893d6,false] 4144 --- [task-scheduler-5] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 7c8d5c83bd1893d6, Span: 7c8d5c83bd1893d6, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:11:09.011 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-4] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:11:09.012 DEBUG [outbound-gateway,8739baab45ba1bd3,8739baab45ba1bd3,true] 4144 --- [XNIO-2 task-4] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:11:09.026 DEBUG [outbound-gateway,8739baab45ba1bd3,8739baab45ba1bd3,true] 4144 --- [XNIO-2 task-4] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 8739baab45ba1bd3, Span: 8739baab45ba1bd3, Parent: null, exportable:true]
+2017-07-14 08:11:09.026 DEBUG [outbound-gateway,8739baab45ba1bd3,8739baab45ba1bd3,true] 4144 --- [XNIO-2 task-4] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 8739baab45ba1bd3, Span: 8739baab45ba1bd3, Parent: null, exportable:true]
+2017-07-14 08:11:09.026 DEBUG [outbound-gateway,8739baab45ba1bd3,8739baab45ba1bd3,true] 4144 --- [XNIO-2 task-4] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 8739baab45ba1bd3, Span: 8739baab45ba1bd3, Parent: null, exportable:true]
+2017-07-14 08:11:09.026  INFO [outbound-gateway,8739baab45ba1bd3,8739baab45ba1bd3,true] 4144 --- [XNIO-2 task-4] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:11:09.028 DEBUG [outbound-gateway,8739baab45ba1bd3,2d3133df40142219,true] 4144 --- [XNIO-2 task-4] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 8739baab45ba1bd3, Span: 2d3133df40142219, Parent: c5fd4cffe5bb2270, exportable:true]]
+2017-07-14 08:11:09.067  INFO [outbound-gateway,8739baab45ba1bd3,c5fd4cffe5bb2270,true] 4144 --- [XNIO-2 task-4] o.s.integration.support.MessageBuilder   : The header [id=409e4a63-d56f-53fa-62bf-817fe49312fa] is ignored for population because it is is readOnly.
+2017-07-14 08:11:09.068  INFO [outbound-gateway,8739baab45ba1bd3,b1af7b152d13ec59,true] 4144 --- [XNIO-2 task-4] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:11:09.069  INFO [outbound-gateway,8739baab45ba1bd3,b1af7b152d13ec59,true] 4144 --- [XNIO-2 task-4] o.s.integration.support.MessageBuilder   : The header [id=7ea139ed-6f60-e615-1c71-e7800e15a9bb] is ignored for population because it is is readOnly.
+2017-07-14 08:11:09.097 DEBUG [outbound-gateway,8739baab45ba1bd3,8739baab45ba1bd3,true] 4144 --- [XNIO-2 task-4] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 8739baab45ba1bd3, Span: 8739baab45ba1bd3, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:11:09.812 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-6] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:11:09.812 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-6] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:11:09.828 DEBUG [outbound-gateway,4398b11b98c7dff1,4398b11b98c7dff1,false] 4144 --- [task-scheduler-6] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 4398b11b98c7dff1, Span: 4398b11b98c7dff1, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:11:36.294 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-5] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:11:36.295 DEBUG [outbound-gateway,413328c42d52d0bb,413328c42d52d0bb,true] 4144 --- [XNIO-2 task-5] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:11:36.306 DEBUG [outbound-gateway,413328c42d52d0bb,413328c42d52d0bb,true] 4144 --- [XNIO-2 task-5] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 413328c42d52d0bb, Span: 413328c42d52d0bb, Parent: null, exportable:true]
+2017-07-14 08:11:36.313 DEBUG [outbound-gateway,413328c42d52d0bb,413328c42d52d0bb,true] 4144 --- [XNIO-2 task-5] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 413328c42d52d0bb, Span: 413328c42d52d0bb, Parent: null, exportable:true]
+2017-07-14 08:11:36.313 DEBUG [outbound-gateway,413328c42d52d0bb,413328c42d52d0bb,true] 4144 --- [XNIO-2 task-5] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 413328c42d52d0bb, Span: 413328c42d52d0bb, Parent: null, exportable:true]
+2017-07-14 08:11:36.314  INFO [outbound-gateway,413328c42d52d0bb,413328c42d52d0bb,true] 4144 --- [XNIO-2 task-5] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:11:36.318 DEBUG [outbound-gateway,413328c42d52d0bb,b1fc2cc1a106a446,true] 4144 --- [XNIO-2 task-5] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 413328c42d52d0bb, Span: b1fc2cc1a106a446, Parent: 5cd9b6e2977d0842, exportable:true]]
+2017-07-14 08:11:36.366  INFO [outbound-gateway,413328c42d52d0bb,5cd9b6e2977d0842,true] 4144 --- [XNIO-2 task-5] o.s.integration.support.MessageBuilder   : The header [id=9f11c2e4-bed4-1f27-d551-db3ada09e890] is ignored for population because it is is readOnly.
+2017-07-14 08:11:36.367  INFO [outbound-gateway,413328c42d52d0bb,27a5f15cf7bd407f,true] 4144 --- [XNIO-2 task-5] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:11:36.367  INFO [outbound-gateway,413328c42d52d0bb,27a5f15cf7bd407f,true] 4144 --- [XNIO-2 task-5] o.s.integration.support.MessageBuilder   : The header [id=f303c836-fe01-6442-9ffa-ea1f8252d187] is ignored for population because it is is readOnly.
+2017-07-14 08:11:36.388 DEBUG [outbound-gateway,413328c42d52d0bb,413328c42d52d0bb,true] 4144 --- [XNIO-2 task-5] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 413328c42d52d0bb, Span: 413328c42d52d0bb, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:11:36.844 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-3] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:11:36.844 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-3] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:11:36.858 DEBUG [outbound-gateway,8d1b3eb100fc5b55,8d1b3eb100fc5b55,false] 4144 --- [task-scheduler-3] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 8d1b3eb100fc5b55, Span: 8d1b3eb100fc5b55, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:11:37.612 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-6] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:11:37.618 DEBUG [outbound-gateway,38087daf7ea1d173,38087daf7ea1d173,true] 4144 --- [XNIO-2 task-6] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:11:37.624 DEBUG [outbound-gateway,38087daf7ea1d173,38087daf7ea1d173,true] 4144 --- [XNIO-2 task-6] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 38087daf7ea1d173, Span: 38087daf7ea1d173, Parent: null, exportable:true]
+2017-07-14 08:11:37.628 DEBUG [outbound-gateway,38087daf7ea1d173,38087daf7ea1d173,true] 4144 --- [XNIO-2 task-6] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 38087daf7ea1d173, Span: 38087daf7ea1d173, Parent: null, exportable:true]
+2017-07-14 08:11:37.628 DEBUG [outbound-gateway,38087daf7ea1d173,38087daf7ea1d173,true] 4144 --- [XNIO-2 task-6] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 38087daf7ea1d173, Span: 38087daf7ea1d173, Parent: null, exportable:true]
+2017-07-14 08:11:37.633  INFO [outbound-gateway,38087daf7ea1d173,38087daf7ea1d173,true] 4144 --- [XNIO-2 task-6] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:11:37.635 DEBUG [outbound-gateway,38087daf7ea1d173,7231f491dda52040,true] 4144 --- [XNIO-2 task-6] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 38087daf7ea1d173, Span: 7231f491dda52040, Parent: 5bb2528ecae43253, exportable:true]]
+2017-07-14 08:11:37.660  INFO [outbound-gateway,38087daf7ea1d173,5bb2528ecae43253,true] 4144 --- [XNIO-2 task-6] o.s.integration.support.MessageBuilder   : The header [id=35ada1b2-640b-74d0-5ebe-511c85bc75da] is ignored for population because it is is readOnly.
+2017-07-14 08:11:37.664  INFO [outbound-gateway,38087daf7ea1d173,748eb772e976785b,true] 4144 --- [XNIO-2 task-6] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:11:37.664  INFO [outbound-gateway,38087daf7ea1d173,748eb772e976785b,true] 4144 --- [XNIO-2 task-6] o.s.integration.support.MessageBuilder   : The header [id=b132ec70-c093-760c-77dc-319fe1679b0a] is ignored for population because it is is readOnly.
+2017-07-14 08:11:37.686 DEBUG [outbound-gateway,38087daf7ea1d173,38087daf7ea1d173,true] 4144 --- [XNIO-2 task-6] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 38087daf7ea1d173, Span: 38087daf7ea1d173, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:11:37.859 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-6] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:11:37.860 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-6] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:11:37.880 DEBUG [outbound-gateway,77620a21272433a4,77620a21272433a4,false] 4144 --- [task-scheduler-6] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 77620a21272433a4, Span: 77620a21272433a4, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:11:38.859 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-7] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:11:38.860 DEBUG [outbound-gateway,c7b9ed755647e01e,c7b9ed755647e01e,true] 4144 --- [XNIO-2 task-7] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:11:38.868 DEBUG [outbound-gateway,c7b9ed755647e01e,c7b9ed755647e01e,true] 4144 --- [XNIO-2 task-7] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: c7b9ed755647e01e, Span: c7b9ed755647e01e, Parent: null, exportable:true]
+2017-07-14 08:11:38.873 DEBUG [outbound-gateway,c7b9ed755647e01e,c7b9ed755647e01e,true] 4144 --- [XNIO-2 task-7] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: c7b9ed755647e01e, Span: c7b9ed755647e01e, Parent: null, exportable:true]
+2017-07-14 08:11:38.873 DEBUG [outbound-gateway,c7b9ed755647e01e,c7b9ed755647e01e,true] 4144 --- [XNIO-2 task-7] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: c7b9ed755647e01e, Span: c7b9ed755647e01e, Parent: null, exportable:true]
+2017-07-14 08:11:38.874  INFO [outbound-gateway,c7b9ed755647e01e,c7b9ed755647e01e,true] 4144 --- [XNIO-2 task-7] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:11:38.875 DEBUG [outbound-gateway,c7b9ed755647e01e,546d66ed86177b09,true] 4144 --- [XNIO-2 task-7] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: c7b9ed755647e01e, Span: 546d66ed86177b09, Parent: 982ad6f51f1cc97e, exportable:true]]
+2017-07-14 08:11:38.894  INFO [outbound-gateway,c7b9ed755647e01e,982ad6f51f1cc97e,true] 4144 --- [XNIO-2 task-7] o.s.integration.support.MessageBuilder   : The header [id=edd6248b-0d94-8561-0788-d3f4828fc475] is ignored for population because it is is readOnly.
+2017-07-14 08:11:38.898  INFO [outbound-gateway,c7b9ed755647e01e,be771e6e3078c090,true] 4144 --- [XNIO-2 task-7] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:11:38.900  INFO [outbound-gateway,c7b9ed755647e01e,be771e6e3078c090,true] 4144 --- [XNIO-2 task-7] o.s.integration.support.MessageBuilder   : The header [id=e93dc08b-c2d9-fc7d-601f-6d2763be4a08] is ignored for population because it is is readOnly.
+2017-07-14 08:11:38.921 DEBUG [outbound-gateway,c7b9ed755647e01e,c7b9ed755647e01e,true] 4144 --- [XNIO-2 task-7] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: c7b9ed755647e01e, Span: c7b9ed755647e01e, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:11:39.881 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-4] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:11:39.881 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-4] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:11:39.903 DEBUG [outbound-gateway,d3e4a8e1705ec2a7,d3e4a8e1705ec2a7,false] 4144 --- [task-scheduler-4] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: d3e4a8e1705ec2a7, Span: d3e4a8e1705ec2a7, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:11:40.987 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-8] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:11:40.988 DEBUG [outbound-gateway,6e7e2652fcffda86,6e7e2652fcffda86,true] 4144 --- [XNIO-2 task-8] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:11:40.994 DEBUG [outbound-gateway,6e7e2652fcffda86,6e7e2652fcffda86,true] 4144 --- [XNIO-2 task-8] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 6e7e2652fcffda86, Span: 6e7e2652fcffda86, Parent: null, exportable:true]
+2017-07-14 08:11:40.995 DEBUG [outbound-gateway,6e7e2652fcffda86,6e7e2652fcffda86,true] 4144 --- [XNIO-2 task-8] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 6e7e2652fcffda86, Span: 6e7e2652fcffda86, Parent: null, exportable:true]
+2017-07-14 08:11:40.995 DEBUG [outbound-gateway,6e7e2652fcffda86,6e7e2652fcffda86,true] 4144 --- [XNIO-2 task-8] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 6e7e2652fcffda86, Span: 6e7e2652fcffda86, Parent: null, exportable:true]
+2017-07-14 08:11:40.995  INFO [outbound-gateway,6e7e2652fcffda86,6e7e2652fcffda86,true] 4144 --- [XNIO-2 task-8] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:11:41.003 DEBUG [outbound-gateway,6e7e2652fcffda86,2d64f39cd8151a37,true] 4144 --- [XNIO-2 task-8] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 6e7e2652fcffda86, Span: 2d64f39cd8151a37, Parent: 8b4c7eb79c8e5443, exportable:true]]
+2017-07-14 08:11:41.044  INFO [outbound-gateway,6e7e2652fcffda86,8b4c7eb79c8e5443,true] 4144 --- [XNIO-2 task-8] o.s.integration.support.MessageBuilder   : The header [id=8d53d8f6-0181-2d9b-7195-db10054bc072] is ignored for population because it is is readOnly.
+2017-07-14 08:11:41.046  INFO [outbound-gateway,6e7e2652fcffda86,8fc5353208e842d1,true] 4144 --- [XNIO-2 task-8] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:11:41.051  INFO [outbound-gateway,6e7e2652fcffda86,8fc5353208e842d1,true] 4144 --- [XNIO-2 task-8] o.s.integration.support.MessageBuilder   : The header [id=66ce71e7-84da-c142-1289-45696e8b3a92] is ignored for population because it is is readOnly.
+2017-07-14 08:11:41.069 DEBUG [outbound-gateway,6e7e2652fcffda86,6e7e2652fcffda86,true] 4144 --- [XNIO-2 task-8] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 6e7e2652fcffda86, Span: 6e7e2652fcffda86, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:11:41.480 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-9] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:11:41.481 DEBUG [outbound-gateway,27f6008f02f5422a,27f6008f02f5422a,true] 4144 --- [XNIO-2 task-9] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:11:41.488 DEBUG [outbound-gateway,27f6008f02f5422a,27f6008f02f5422a,true] 4144 --- [XNIO-2 task-9] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 27f6008f02f5422a, Span: 27f6008f02f5422a, Parent: null, exportable:true]
+2017-07-14 08:11:41.490 DEBUG [outbound-gateway,27f6008f02f5422a,27f6008f02f5422a,true] 4144 --- [XNIO-2 task-9] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 27f6008f02f5422a, Span: 27f6008f02f5422a, Parent: null, exportable:true]
+2017-07-14 08:11:41.491 DEBUG [outbound-gateway,27f6008f02f5422a,27f6008f02f5422a,true] 4144 --- [XNIO-2 task-9] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 27f6008f02f5422a, Span: 27f6008f02f5422a, Parent: null, exportable:true]
+2017-07-14 08:11:41.491  INFO [outbound-gateway,27f6008f02f5422a,27f6008f02f5422a,true] 4144 --- [XNIO-2 task-9] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:11:41.494 DEBUG [outbound-gateway,27f6008f02f5422a,08d5c009f880375a,true] 4144 --- [XNIO-2 task-9] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 27f6008f02f5422a, Span: 08d5c009f880375a, Parent: ac59109a9293230d, exportable:true]]
+2017-07-14 08:11:41.522  INFO [outbound-gateway,27f6008f02f5422a,ac59109a9293230d,true] 4144 --- [XNIO-2 task-9] o.s.integration.support.MessageBuilder   : The header [id=ebfa8d12-597d-bfbd-1228-a35517ad96f2] is ignored for population because it is is readOnly.
+2017-07-14 08:11:41.528  INFO [outbound-gateway,27f6008f02f5422a,9a27723dc28f35e4,true] 4144 --- [XNIO-2 task-9] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:11:41.533  INFO [outbound-gateway,27f6008f02f5422a,9a27723dc28f35e4,true] 4144 --- [XNIO-2 task-9] o.s.integration.support.MessageBuilder   : The header [id=c95a609b-c114-caf2-7d21-aabbdf0d9203] is ignored for population because it is is readOnly.
+2017-07-14 08:11:41.549 DEBUG [outbound-gateway,27f6008f02f5422a,27f6008f02f5422a,true] 4144 --- [XNIO-2 task-9] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 27f6008f02f5422a, Span: 27f6008f02f5422a, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:11:41.910 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-1] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [8] spans
+2017-07-14 08:11:41.910 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-1] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:11:41.933 DEBUG [outbound-gateway,4d2b821e46ef4c3d,4d2b821e46ef4c3d,false] 4144 --- [task-scheduler-1] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 4d2b821e46ef4c3d, Span: 4d2b821e46ef4c3d, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:12:33.874 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-10] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:12:33.880 DEBUG [outbound-gateway,1a18611829e95513,1a18611829e95513,true] 4144 --- [XNIO-2 task-10] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:12:33.884 DEBUG [outbound-gateway,1a18611829e95513,1a18611829e95513,true] 4144 --- [XNIO-2 task-10] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 1a18611829e95513, Span: 1a18611829e95513, Parent: null, exportable:true]
+2017-07-14 08:12:33.889 DEBUG [outbound-gateway,1a18611829e95513,1a18611829e95513,true] 4144 --- [XNIO-2 task-10] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 1a18611829e95513, Span: 1a18611829e95513, Parent: null, exportable:true]
+2017-07-14 08:12:33.889 DEBUG [outbound-gateway,1a18611829e95513,1a18611829e95513,true] 4144 --- [XNIO-2 task-10] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 1a18611829e95513, Span: 1a18611829e95513, Parent: null, exportable:true]
+2017-07-14 08:12:33.890  INFO [outbound-gateway,1a18611829e95513,1a18611829e95513,true] 4144 --- [XNIO-2 task-10] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:12:33.903 DEBUG [outbound-gateway,1a18611829e95513,747369cd4f1d860e,true] 4144 --- [XNIO-2 task-10] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 1a18611829e95513, Span: 747369cd4f1d860e, Parent: a61b8de46b76b802, exportable:true]]
+2017-07-14 08:12:33.944  INFO [outbound-gateway,1a18611829e95513,a61b8de46b76b802,true] 4144 --- [XNIO-2 task-10] o.s.integration.support.MessageBuilder   : The header [id=f7299c4c-72f0-cd98-96af-37eacead90c3] is ignored for population because it is is readOnly.
+2017-07-14 08:12:33.947 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-7] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [1] spans
+2017-07-14 08:12:33.947 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-7] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:12:33.951 DEBUG [outbound-gateway,d8f009df41555722,d8f009df41555722,false] 4144 --- [task-scheduler-7] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: d8f009df41555722, Span: d8f009df41555722, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:12:33.952  INFO [outbound-gateway,1a18611829e95513,bde8848a6ef0be1a,true] 4144 --- [XNIO-2 task-10] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:12:33.952  INFO [outbound-gateway,1a18611829e95513,bde8848a6ef0be1a,true] 4144 --- [XNIO-2 task-10] o.s.integration.support.MessageBuilder   : The header [id=7df98987-4052-b70b-9b89-9c4d70f5fead] is ignored for population because it is is readOnly.
+2017-07-14 08:12:33.985 DEBUG [outbound-gateway,1a18611829e95513,1a18611829e95513,true] 4144 --- [XNIO-2 task-10] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 1a18611829e95513, Span: 1a18611829e95513, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:12:34.952 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-4] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [3] spans
+2017-07-14 08:12:34.952 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-4] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:12:34.962 DEBUG [outbound-gateway,065f61adf79549fa,065f61adf79549fa,false] 4144 --- [task-scheduler-4] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 065f61adf79549fa, Span: 065f61adf79549fa, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:17:21.673 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-11] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:17:21.674 DEBUG [outbound-gateway,70851a1d424c6add,70851a1d424c6add,true] 4144 --- [XNIO-2 task-11] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:17:21.680 DEBUG [outbound-gateway,70851a1d424c6add,70851a1d424c6add,true] 4144 --- [XNIO-2 task-11] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 70851a1d424c6add, Span: 70851a1d424c6add, Parent: null, exportable:true]
+2017-07-14 08:17:21.680 DEBUG [outbound-gateway,70851a1d424c6add,70851a1d424c6add,true] 4144 --- [XNIO-2 task-11] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 70851a1d424c6add, Span: 70851a1d424c6add, Parent: null, exportable:true]
+2017-07-14 08:17:21.680 DEBUG [outbound-gateway,70851a1d424c6add,70851a1d424c6add,true] 4144 --- [XNIO-2 task-11] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 70851a1d424c6add, Span: 70851a1d424c6add, Parent: null, exportable:true]
+2017-07-14 08:17:21.680  INFO [outbound-gateway,70851a1d424c6add,70851a1d424c6add,true] 4144 --- [XNIO-2 task-11] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:17:21.685 DEBUG [outbound-gateway,70851a1d424c6add,bc9fec594f67d5ad,true] 4144 --- [XNIO-2 task-11] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 70851a1d424c6add, Span: bc9fec594f67d5ad, Parent: 9c92acf07aa9031e, exportable:true]]
+2017-07-14 08:17:21.704  INFO [outbound-gateway,70851a1d424c6add,9c92acf07aa9031e,true] 4144 --- [XNIO-2 task-11] o.s.integration.support.MessageBuilder   : The header [id=12c8f533-493b-5b17-62f6-04d71d8e6ceb] is ignored for population because it is is readOnly.
+2017-07-14 08:17:21.707  INFO [outbound-gateway,70851a1d424c6add,311eb0c1ce3b1d50,true] 4144 --- [XNIO-2 task-11] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:17:21.710  INFO [outbound-gateway,70851a1d424c6add,311eb0c1ce3b1d50,true] 4144 --- [XNIO-2 task-11] o.s.integration.support.MessageBuilder   : The header [id=56c92ca8-c386-effe-8bcc-96e171791458] is ignored for population because it is is readOnly.
+2017-07-14 08:17:21.727 DEBUG [outbound-gateway,70851a1d424c6add,70851a1d424c6add,true] 4144 --- [XNIO-2 task-11] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 70851a1d424c6add, Span: 70851a1d424c6add, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:17:22.016 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-9] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:17:22.016 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-9] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:17:22.032 DEBUG [outbound-gateway,24c3105d3c3331c6,24c3105d3c3331c6,false] 4144 --- [task-scheduler-9] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 24c3105d3c3331c6, Span: 24c3105d3c3331c6, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:18:50.227 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-12] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:18:50.227 DEBUG [outbound-gateway,bd79ca80aeb9692a,bd79ca80aeb9692a,true] 4144 --- [XNIO-2 task-12] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:18:50.239 DEBUG [outbound-gateway,bd79ca80aeb9692a,bd79ca80aeb9692a,true] 4144 --- [XNIO-2 task-12] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: bd79ca80aeb9692a, Span: bd79ca80aeb9692a, Parent: null, exportable:true]
+2017-07-14 08:18:50.246 DEBUG [outbound-gateway,bd79ca80aeb9692a,bd79ca80aeb9692a,true] 4144 --- [XNIO-2 task-12] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: bd79ca80aeb9692a, Span: bd79ca80aeb9692a, Parent: null, exportable:true]
+2017-07-14 08:18:50.246 DEBUG [outbound-gateway,bd79ca80aeb9692a,bd79ca80aeb9692a,true] 4144 --- [XNIO-2 task-12] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: bd79ca80aeb9692a, Span: bd79ca80aeb9692a, Parent: null, exportable:true]
+2017-07-14 08:18:50.247  INFO [outbound-gateway,bd79ca80aeb9692a,bd79ca80aeb9692a,true] 4144 --- [XNIO-2 task-12] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:18:50.249 DEBUG [outbound-gateway,bd79ca80aeb9692a,6b7127c8c29668d8,true] 4144 --- [XNIO-2 task-12] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: bd79ca80aeb9692a, Span: 6b7127c8c29668d8, Parent: 8f17f41e46408d49, exportable:true]]
+2017-07-14 08:18:50.283  INFO [outbound-gateway,bd79ca80aeb9692a,8f17f41e46408d49,true] 4144 --- [XNIO-2 task-12] o.s.integration.support.MessageBuilder   : The header [id=4e25977c-fb3f-74f6-cb23-b2f04cd120b8] is ignored for population because it is is readOnly.
+2017-07-14 08:18:50.284  INFO [outbound-gateway,bd79ca80aeb9692a,417dd331aa9696a2,true] 4144 --- [XNIO-2 task-12] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:18:50.284  INFO [outbound-gateway,bd79ca80aeb9692a,417dd331aa9696a2,true] 4144 --- [XNIO-2 task-12] o.s.integration.support.MessageBuilder   : The header [id=d5c7bcc2-ab5f-a508-4f47-6a47dcc6d43f] is ignored for population because it is is readOnly.
+2017-07-14 08:18:50.290 DEBUG [outbound-gateway,bd79ca80aeb9692a,bd79ca80aeb9692a,true] 4144 --- [XNIO-2 task-12] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: bd79ca80aeb9692a, Span: bd79ca80aeb9692a, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:18:50.628 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-13] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/favicon.ico] that should not be sampled [true]
+2017-07-14 08:18:50.628 DEBUG [outbound-gateway,d523850427b56d22,d523850427b56d22,false] 4144 --- [XNIO-2 task-13] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:18:50.643 DEBUG [outbound-gateway,d523850427b56d22,7253a97e91aaab31,false] 4144 --- [XNIO-2 task-13] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: d523850427b56d22, Span: 7253a97e91aaab31, Parent: d523850427b56d22, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:18:50.645 DEBUG [outbound-gateway,d523850427b56d22,d523850427b56d22,false] 4144 --- [XNIO-2 task-13] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: d523850427b56d22, Span: d523850427b56d22, Parent: null, exportable:false] since the response was successful
+2017-07-14 08:18:50.646 DEBUG [outbound-gateway,d523850427b56d22,d523850427b56d22,false] 4144 --- [XNIO-2 task-13] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: d523850427b56d22, Span: d523850427b56d22, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:18:51.049 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-7] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:18:51.049 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-7] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:18:51.077 DEBUG [outbound-gateway,ded0c143cf0cfea9,ded0c143cf0cfea9,false] 4144 --- [task-scheduler-7] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: ded0c143cf0cfea9, Span: ded0c143cf0cfea9, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:20:23.055 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-14] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:20:23.056 DEBUG [outbound-gateway,39e21d34469aac2c,39e21d34469aac2c,true] 4144 --- [XNIO-2 task-14] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:20:23.064 DEBUG [outbound-gateway,39e21d34469aac2c,39e21d34469aac2c,true] 4144 --- [XNIO-2 task-14] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 39e21d34469aac2c, Span: 39e21d34469aac2c, Parent: null, exportable:true]
+2017-07-14 08:20:23.065 DEBUG [outbound-gateway,39e21d34469aac2c,39e21d34469aac2c,true] 4144 --- [XNIO-2 task-14] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 39e21d34469aac2c, Span: 39e21d34469aac2c, Parent: null, exportable:true]
+2017-07-14 08:20:23.066 DEBUG [outbound-gateway,39e21d34469aac2c,39e21d34469aac2c,true] 4144 --- [XNIO-2 task-14] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 39e21d34469aac2c, Span: 39e21d34469aac2c, Parent: null, exportable:true]
+2017-07-14 08:20:23.066  INFO [outbound-gateway,39e21d34469aac2c,39e21d34469aac2c,true] 4144 --- [XNIO-2 task-14] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:20:23.067 DEBUG [outbound-gateway,39e21d34469aac2c,8a2593fceb34bdc2,true] 4144 --- [XNIO-2 task-14] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 39e21d34469aac2c, Span: 8a2593fceb34bdc2, Parent: 29ee5b518b301770, exportable:true]]
+2017-07-14 08:20:23.086  INFO [outbound-gateway,39e21d34469aac2c,29ee5b518b301770,true] 4144 --- [XNIO-2 task-14] o.s.integration.support.MessageBuilder   : The header [id=da75825e-a4a9-e43f-34ec-7c5afe7d78c3] is ignored for population because it is is readOnly.
+2017-07-14 08:20:23.088  INFO [outbound-gateway,39e21d34469aac2c,1f5e2c073272f09e,true] 4144 --- [XNIO-2 task-14] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:20:23.089  INFO [outbound-gateway,39e21d34469aac2c,1f5e2c073272f09e,true] 4144 --- [XNIO-2 task-14] o.s.integration.support.MessageBuilder   : The header [id=ec92b766-2d3b-b2f0-a9c2-4ec3a7fc27b6] is ignored for population because it is is readOnly.
+2017-07-14 08:20:23.091 DEBUG [outbound-gateway,39e21d34469aac2c,39e21d34469aac2c,true] 4144 --- [XNIO-2 task-14] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 39e21d34469aac2c, Span: 39e21d34469aac2c, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:20:23.093 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-8] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:20:23.093 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-8] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:20:23.101 DEBUG [outbound-gateway,7207e771e2995484,7207e771e2995484,false] 4144 --- [task-scheduler-8] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 7207e771e2995484, Span: 7207e771e2995484, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:20:23.446 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-15] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/favicon.ico] that should not be sampled [true]
+2017-07-14 08:20:23.446 DEBUG [outbound-gateway,fea5f1d905686881,fea5f1d905686881,false] 4144 --- [XNIO-2 task-15] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:20:23.449 DEBUG [outbound-gateway,fea5f1d905686881,ee1c6cced2263500,false] 4144 --- [XNIO-2 task-15] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: fea5f1d905686881, Span: ee1c6cced2263500, Parent: fea5f1d905686881, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:20:23.449 DEBUG [outbound-gateway,fea5f1d905686881,fea5f1d905686881,false] 4144 --- [XNIO-2 task-15] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: fea5f1d905686881, Span: fea5f1d905686881, Parent: null, exportable:false] since the response was successful
+2017-07-14 08:20:23.449 DEBUG [outbound-gateway,fea5f1d905686881,fea5f1d905686881,false] 4144 --- [XNIO-2 task-15] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: fea5f1d905686881, Span: fea5f1d905686881, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:31:21.130 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-16] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:31:21.131 DEBUG [outbound-gateway,46db81b86ac144d6,46db81b86ac144d6,true] 4144 --- [XNIO-2 task-16] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:31:21.141 DEBUG [outbound-gateway,46db81b86ac144d6,46db81b86ac144d6,true] 4144 --- [XNIO-2 task-16] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 46db81b86ac144d6, Span: 46db81b86ac144d6, Parent: null, exportable:true]
+2017-07-14 08:31:21.141 DEBUG [outbound-gateway,46db81b86ac144d6,46db81b86ac144d6,true] 4144 --- [XNIO-2 task-16] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 46db81b86ac144d6, Span: 46db81b86ac144d6, Parent: null, exportable:true]
+2017-07-14 08:31:21.141 DEBUG [outbound-gateway,46db81b86ac144d6,46db81b86ac144d6,true] 4144 --- [XNIO-2 task-16] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 46db81b86ac144d6, Span: 46db81b86ac144d6, Parent: null, exportable:true]
+2017-07-14 08:31:21.141  INFO [outbound-gateway,46db81b86ac144d6,46db81b86ac144d6,true] 4144 --- [XNIO-2 task-16] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:31:21.142 DEBUG [outbound-gateway,46db81b86ac144d6,44e2b11a4266d547,true] 4144 --- [XNIO-2 task-16] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 46db81b86ac144d6, Span: 44e2b11a4266d547, Parent: 8ae843ea121f49ae, exportable:true]]
+2017-07-14 08:31:21.166  INFO [outbound-gateway,46db81b86ac144d6,8ae843ea121f49ae,true] 4144 --- [XNIO-2 task-16] o.s.integration.support.MessageBuilder   : The header [id=5d2922ce-6ab2-291c-8f30-c852445d52ba] is ignored for population because it is is readOnly.
+2017-07-14 08:31:21.167  INFO [outbound-gateway,46db81b86ac144d6,feec21608f747310,true] 4144 --- [XNIO-2 task-16] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:31:21.169  INFO [outbound-gateway,46db81b86ac144d6,feec21608f747310,true] 4144 --- [XNIO-2 task-16] o.s.integration.support.MessageBuilder   : The header [id=a11a07fb-1ee9-e42c-ba8e-3eb0493be46b] is ignored for population because it is is readOnly.
+2017-07-14 08:31:21.182 DEBUG [outbound-gateway,46db81b86ac144d6,46db81b86ac144d6,true] 4144 --- [XNIO-2 task-16] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 46db81b86ac144d6, Span: 46db81b86ac144d6, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:31:21.200 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-4] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:31:21.200 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-4] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:31:21.204 DEBUG [outbound-gateway,06d74d53973eba34,06d74d53973eba34,false] 4144 --- [task-scheduler-4] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 06d74d53973eba34, Span: 06d74d53973eba34, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:31:23.263 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:31:23.263 DEBUG [outbound-gateway,f4440811b451b614,f4440811b451b614,true] 4144 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:31:23.266 DEBUG [outbound-gateway,f4440811b451b614,f4440811b451b614,true] 4144 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: f4440811b451b614, Span: f4440811b451b614, Parent: null, exportable:true]
+2017-07-14 08:31:23.267 DEBUG [outbound-gateway,f4440811b451b614,f4440811b451b614,true] 4144 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: f4440811b451b614, Span: f4440811b451b614, Parent: null, exportable:true]
+2017-07-14 08:31:23.271 DEBUG [outbound-gateway,f4440811b451b614,f4440811b451b614,true] 4144 --- [XNIO-2 task-1] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: f4440811b451b614, Span: f4440811b451b614, Parent: null, exportable:true]
+2017-07-14 08:31:23.271  INFO [outbound-gateway,f4440811b451b614,f4440811b451b614,true] 4144 --- [XNIO-2 task-1] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:31:23.277 DEBUG [outbound-gateway,f4440811b451b614,7e04a5ced0196cbc,true] 4144 --- [XNIO-2 task-1] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: f4440811b451b614, Span: 7e04a5ced0196cbc, Parent: 674eb42c599dd3b5, exportable:true]]
+2017-07-14 08:31:23.299  INFO [outbound-gateway,f4440811b451b614,674eb42c599dd3b5,true] 4144 --- [XNIO-2 task-1] o.s.integration.support.MessageBuilder   : The header [id=9e7a3f0c-6457-103f-4f45-bfdadbb87963] is ignored for population because it is is readOnly.
+2017-07-14 08:31:23.301  INFO [outbound-gateway,f4440811b451b614,29c1e1ab584c9cdf,true] 4144 --- [XNIO-2 task-1] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:31:23.302  INFO [outbound-gateway,f4440811b451b614,29c1e1ab584c9cdf,true] 4144 --- [XNIO-2 task-1] o.s.integration.support.MessageBuilder   : The header [id=218f1b31-fe66-fabf-c795-3da6bdef7099] is ignored for population because it is is readOnly.
+2017-07-14 08:31:23.317 DEBUG [outbound-gateway,f4440811b451b614,f4440811b451b614,true] 4144 --- [XNIO-2 task-1] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: f4440811b451b614, Span: f4440811b451b614, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:31:24.214 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-1] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:31:24.214 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-1] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:31:24.226 DEBUG [outbound-gateway,23c547526f3e5d00,23c547526f3e5d00,false] 4144 --- [task-scheduler-1] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 23c547526f3e5d00, Span: 23c547526f3e5d00, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:31:24.329 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-2] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:31:24.330 DEBUG [outbound-gateway,252a0735b35f7746,252a0735b35f7746,true] 4144 --- [XNIO-2 task-2] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:31:24.331 DEBUG [outbound-gateway,252a0735b35f7746,252a0735b35f7746,true] 4144 --- [XNIO-2 task-2] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 252a0735b35f7746, Span: 252a0735b35f7746, Parent: null, exportable:true]
+2017-07-14 08:31:24.331 DEBUG [outbound-gateway,252a0735b35f7746,252a0735b35f7746,true] 4144 --- [XNIO-2 task-2] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 252a0735b35f7746, Span: 252a0735b35f7746, Parent: null, exportable:true]
+2017-07-14 08:31:24.331 DEBUG [outbound-gateway,252a0735b35f7746,252a0735b35f7746,true] 4144 --- [XNIO-2 task-2] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 252a0735b35f7746, Span: 252a0735b35f7746, Parent: null, exportable:true]
+2017-07-14 08:31:24.331  INFO [outbound-gateway,252a0735b35f7746,252a0735b35f7746,true] 4144 --- [XNIO-2 task-2] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:31:24.332 DEBUG [outbound-gateway,252a0735b35f7746,77e6ffdf1749aac3,true] 4144 --- [XNIO-2 task-2] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 252a0735b35f7746, Span: 77e6ffdf1749aac3, Parent: 3140976e0a6dd9f2, exportable:true]]
+2017-07-14 08:31:24.352  INFO [outbound-gateway,252a0735b35f7746,3140976e0a6dd9f2,true] 4144 --- [XNIO-2 task-2] o.s.integration.support.MessageBuilder   : The header [id=1b0550ff-0d34-f8d5-6067-80297c92242e] is ignored for population because it is is readOnly.
+2017-07-14 08:31:24.353  INFO [outbound-gateway,252a0735b35f7746,afe59d86b8d85323,true] 4144 --- [XNIO-2 task-2] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:31:24.354  INFO [outbound-gateway,252a0735b35f7746,afe59d86b8d85323,true] 4144 --- [XNIO-2 task-2] o.s.integration.support.MessageBuilder   : The header [id=12213f33-216f-e94e-f4d9-b6928a44dc4e] is ignored for population because it is is readOnly.
+2017-07-14 08:31:24.365 DEBUG [outbound-gateway,252a0735b35f7746,252a0735b35f7746,true] 4144 --- [XNIO-2 task-2] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 252a0735b35f7746, Span: 252a0735b35f7746, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:31:25.226 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-2] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:31:25.226 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-2] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:31:25.236 DEBUG [outbound-gateway,89a835f7c7ba1d77,89a835f7c7ba1d77,false] 4144 --- [task-scheduler-2] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 89a835f7c7ba1d77, Span: 89a835f7c7ba1d77, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:31:25.548 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-3] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:31:25.548 DEBUG [outbound-gateway,6fd5af441568f645,6fd5af441568f645,true] 4144 --- [XNIO-2 task-3] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:31:25.549 DEBUG [outbound-gateway,6fd5af441568f645,6fd5af441568f645,true] 4144 --- [XNIO-2 task-3] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 6fd5af441568f645, Span: 6fd5af441568f645, Parent: null, exportable:true]
+2017-07-14 08:31:25.549 DEBUG [outbound-gateway,6fd5af441568f645,6fd5af441568f645,true] 4144 --- [XNIO-2 task-3] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 6fd5af441568f645, Span: 6fd5af441568f645, Parent: null, exportable:true]
+2017-07-14 08:31:25.549 DEBUG [outbound-gateway,6fd5af441568f645,6fd5af441568f645,true] 4144 --- [XNIO-2 task-3] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 6fd5af441568f645, Span: 6fd5af441568f645, Parent: null, exportable:true]
+2017-07-14 08:31:25.550  INFO [outbound-gateway,6fd5af441568f645,6fd5af441568f645,true] 4144 --- [XNIO-2 task-3] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:31:25.550 DEBUG [outbound-gateway,6fd5af441568f645,1463498220a34711,true] 4144 --- [XNIO-2 task-3] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 6fd5af441568f645, Span: 1463498220a34711, Parent: da85cde8bd3d080f, exportable:true]]
+2017-07-14 08:31:25.569  INFO [outbound-gateway,6fd5af441568f645,da85cde8bd3d080f,true] 4144 --- [XNIO-2 task-3] o.s.integration.support.MessageBuilder   : The header [id=e83d75b2-ea9f-ff53-69e6-1dc06487b4b9] is ignored for population because it is is readOnly.
+2017-07-14 08:31:25.569  INFO [outbound-gateway,6fd5af441568f645,03012a43368e2a49,true] 4144 --- [XNIO-2 task-3] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:31:25.570  INFO [outbound-gateway,6fd5af441568f645,03012a43368e2a49,true] 4144 --- [XNIO-2 task-3] o.s.integration.support.MessageBuilder   : The header [id=3689d7d3-185e-6f6b-402c-293412731b81] is ignored for population because it is is readOnly.
+2017-07-14 08:31:25.585 DEBUG [outbound-gateway,6fd5af441568f645,6fd5af441568f645,true] 4144 --- [XNIO-2 task-3] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 6fd5af441568f645, Span: 6fd5af441568f645, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:31:26.237 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-3] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:31:26.237 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-3] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:31:26.242 DEBUG [outbound-gateway,b0f1048a92e7d16b,b0f1048a92e7d16b,false] 4144 --- [task-scheduler-3] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: b0f1048a92e7d16b, Span: b0f1048a92e7d16b, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:31:26.604 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-4] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:31:26.604 DEBUG [outbound-gateway,e4811d14433b43b5,e4811d14433b43b5,true] 4144 --- [XNIO-2 task-4] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:31:26.605 DEBUG [outbound-gateway,e4811d14433b43b5,e4811d14433b43b5,true] 4144 --- [XNIO-2 task-4] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: e4811d14433b43b5, Span: e4811d14433b43b5, Parent: null, exportable:true]
+2017-07-14 08:31:26.605 DEBUG [outbound-gateway,e4811d14433b43b5,e4811d14433b43b5,true] 4144 --- [XNIO-2 task-4] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: e4811d14433b43b5, Span: e4811d14433b43b5, Parent: null, exportable:true]
+2017-07-14 08:31:26.605 DEBUG [outbound-gateway,e4811d14433b43b5,e4811d14433b43b5,true] 4144 --- [XNIO-2 task-4] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: e4811d14433b43b5, Span: e4811d14433b43b5, Parent: null, exportable:true]
+2017-07-14 08:31:26.605  INFO [outbound-gateway,e4811d14433b43b5,e4811d14433b43b5,true] 4144 --- [XNIO-2 task-4] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:31:26.606 DEBUG [outbound-gateway,e4811d14433b43b5,7e4f5a7c20eed4c0,true] 4144 --- [XNIO-2 task-4] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: e4811d14433b43b5, Span: 7e4f5a7c20eed4c0, Parent: 154f17872b4f59c2, exportable:true]]
+2017-07-14 08:31:26.615  INFO [outbound-gateway,e4811d14433b43b5,154f17872b4f59c2,true] 4144 --- [XNIO-2 task-4] o.s.integration.support.MessageBuilder   : The header [id=cc8b7ffc-781a-ced7-3f20-54c3254c74e6] is ignored for population because it is is readOnly.
+2017-07-14 08:31:26.618  INFO [outbound-gateway,e4811d14433b43b5,17a91f32105e2fbd,true] 4144 --- [XNIO-2 task-4] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:31:26.619  INFO [outbound-gateway,e4811d14433b43b5,17a91f32105e2fbd,true] 4144 --- [XNIO-2 task-4] o.s.integration.support.MessageBuilder   : The header [id=43d30b63-643a-b94a-c1f8-93f71ea12b60] is ignored for population because it is is readOnly.
+2017-07-14 08:31:26.626 DEBUG [outbound-gateway,e4811d14433b43b5,e4811d14433b43b5,true] 4144 --- [XNIO-2 task-4] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: e4811d14433b43b5, Span: e4811d14433b43b5, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:31:27.242 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-6] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:31:27.242 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-6] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:31:27.249 DEBUG [outbound-gateway,9d62008033b76bee,9d62008033b76bee,false] 4144 --- [task-scheduler-6] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: 9d62008033b76bee, Span: 9d62008033b76bee, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
+2017-07-14 08:33:26.438 DEBUG [outbound-gateway,,,] 4144 --- [XNIO-2 task-5] o.s.c.sleuth.instrument.web.TraceFilter  : Received a request to uri [/composite] that should not be sampled [false]
+2017-07-14 08:33:26.438 DEBUG [outbound-gateway,8cfd1bcf37c78713,8cfd1bcf37c78713,true] 4144 --- [XNIO-2 task-5] o.s.c.sleuth.instrument.web.TraceFilter  : No parent span present - creating a new span
+2017-07-14 08:33:26.440 DEBUG [outbound-gateway,8cfd1bcf37c78713,8cfd1bcf37c78713,true] 4144 --- [XNIO-2 task-5] o.s.c.s.i.web.TraceHandlerInterceptor    : Handling span [Trace: 8cfd1bcf37c78713, Span: 8cfd1bcf37c78713, Parent: null, exportable:true]
+2017-07-14 08:33:26.445 DEBUG [outbound-gateway,8cfd1bcf37c78713,8cfd1bcf37c78713,true] 4144 --- [XNIO-2 task-5] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a method tag with value [getValues] to a span [Trace: 8cfd1bcf37c78713, Span: 8cfd1bcf37c78713, Parent: null, exportable:true]
+2017-07-14 08:33:26.445 DEBUG [outbound-gateway,8cfd1bcf37c78713,8cfd1bcf37c78713,true] 4144 --- [XNIO-2 task-5] o.s.c.s.i.web.TraceHandlerInterceptor    : Adding a class tag with value [OutboundGatewayApplication] to a span [Trace: 8cfd1bcf37c78713, Span: 8cfd1bcf37c78713, Parent: null, exportable:true]
+2017-07-14 08:33:26.445  INFO [outbound-gateway,8cfd1bcf37c78713,8cfd1bcf37c78713,true] 4144 --- [XNIO-2 task-5] c.d.i.OutboundGatewayApplication         : sending request to demo-service
+2017-07-14 08:33:26.449 DEBUG [outbound-gateway,8cfd1bcf37c78713,032fda5c0b92faba,true] 4144 --- [XNIO-2 task-5] .w.c.AbstractTraceHttpRequestInterceptor : Starting new client span [[Trace: 8cfd1bcf37c78713, Span: 032fda5c0b92faba, Parent: 3695481ddc200366, exportable:true]]
+2017-07-14 08:33:26.474  INFO [outbound-gateway,8cfd1bcf37c78713,3695481ddc200366,true] 4144 --- [XNIO-2 task-5] o.s.integration.support.MessageBuilder   : The header [id=99fa3f0a-5a51-5298-aba9-8ddaaeec451c] is ignored for population because it is is readOnly.
+2017-07-14 08:33:26.476  INFO [outbound-gateway,8cfd1bcf37c78713,88a6b3a0283232b3,true] 4144 --- [XNIO-2 task-5] com.demo.integration.MessagePrinter      : Received:Welcome
+2017-07-14 08:33:26.477  INFO [outbound-gateway,8cfd1bcf37c78713,88a6b3a0283232b3,true] 4144 --- [XNIO-2 task-5] o.s.integration.support.MessageBuilder   : The header [id=0128021d-5dea-17d3-2344-3414a9369728] is ignored for population because it is is readOnly.
+2017-07-14 08:33:26.481 DEBUG [outbound-gateway,8cfd1bcf37c78713,8cfd1bcf37c78713,true] 4144 --- [XNIO-2 task-5] o.s.c.sleuth.instrument.web.TraceFilter  : Closing the span [Trace: 8cfd1bcf37c78713, Span: 8cfd1bcf37c78713, Parent: null, exportable:true] since the response was successful
+2017-07-14 08:33:27.267 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-7] o.s.c.sleuth.stream.StreamSpanReporter   : Processed [4] spans
+2017-07-14 08:33:27.268 DEBUG [outbound-gateway,,,] 4144 --- [task-scheduler-7] o.s.c.s.s.ServerPropertiesHostLocator    : Span will contain serviceName [outbound-gateway]
+2017-07-14 08:33:27.273 DEBUG [outbound-gateway,f0623d0593749e43,f0623d0593749e43,false] 4144 --- [task-scheduler-7] o.s.c.sleuth.stream.StreamSpanReporter   : The span [Trace: f0623d0593749e43, Span: f0623d0593749e43, Parent: null, exportable:false] will not be sent to Zipkin due to sampling
